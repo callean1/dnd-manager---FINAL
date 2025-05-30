@@ -26,7 +26,7 @@
 			flex-wrap: wrap;
 		"
 	>
-		<!-- Bild -->
+	
 		<div style="flex: 0 0 320px; position: relative; aspect-ratio: 1 / 1; border-radius: 1rem; overflow: hidden;">
 			<img
 				src={rasse.bild_url}
@@ -50,7 +50,6 @@
 			/>
 		</div>
 
-		<!-- Beschreibung und Merkmale -->
 		<div style="flex: 1 1 300px; min-width: 250px;">
 			<p style="margin-bottom: 1rem;">{rasse.beschreibung}</p>
 
@@ -65,7 +64,6 @@
 		</div>
 	</div>
 
-	<!-- Aktionen -->
 	<div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
 		<a href={`/rassen/${rasse._id}/edit`}>
 			<button class="action-button dark">Bearbeiten</button>

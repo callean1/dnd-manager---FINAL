@@ -38,7 +38,6 @@
   }
 </script>
 
-<!-- Button über dem Titel -->
 <div class="top-button-wrapper">
   <button class="action-button" on:click={createRasse}>Neue Rasse hinzufügen</button>
 </div>
@@ -51,7 +50,6 @@
   Rollenspiel bereichern. Die Wahl der Rasse hat Einfluss auf Fähigkeiten, Sprache, Grösse und mehr. 
   Wähle hier deine Rasse aus, oder erstelle dir eine komplett neue Rasse mit deinen Wunschmerkmalen.</p>
 
-<!-- Suchleiste -->
 <div class="search-bar">
   <input
     type="text"
@@ -62,7 +60,6 @@
   <button type="button" on:click={submitSearch} class="action-button">Suchen</button>
 </div>
 
-<!-- Feedback-Meldungen -->
 {#if success}
   <p class="message success">Neue Rasse erfolgreich gespeichert!</p>
 {/if}
@@ -73,14 +70,12 @@
   <p class="message success">Rasse erfolgreich bearbeitet!</p>
 {/if}
 
-<!-- Kartenraster -->
 <div class="grid">
   {#each rassen as rasse}
     <RassenCard {rasse} />
   {/each}
 </div>
 
-<!-- Zurück-zum-Anfang-Button -->
 <div class="scroll-top-wrapper">
   <button
     type="button"

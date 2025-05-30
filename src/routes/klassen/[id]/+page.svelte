@@ -26,7 +26,7 @@
 			flex-wrap: wrap;
 		"
 	>
-		<!-- Bild -->
+
 		<div style="flex: 0 0 320px; position: relative; aspect-ratio: 1 / 1; border-radius: 1rem; overflow: hidden;">
 			<img
 				src={klasse.bild_url}
@@ -50,7 +50,7 @@
 			/>
 		</div>
 
-		<!-- Eigenschaften rechts -->
+
 		<div style="flex: 1 1 300px; min-width: 250px;">
 			<p style="margin-bottom: 1rem;">{klasse.beschreibung}</p>
 

@@ -7,13 +7,13 @@
 	<h1>{charakter.name}</h1>
 
 	<div class="charakter-content">
-		<!-- Bild -->
+		
 		<div class="charakter-image">
 			<img src={charakter.bild_url} alt={charakter.name} />
 			<img src="/images/Rahmen.png" alt="Rahmen" class="rahmen" />
 		</div>
 
-		<!-- Eigenschaften -->
+		
 		<div class="charakter-info">
 			<p>{charakter.beschreibung}</p>
 
@@ -35,7 +35,6 @@
 		</div>
 	</div>
 
-	<!-- Buttons -->
 	<div class="button-group">
 		<a href={`/charaktere/${charakter._id}/edit`}>
 			<button class="action-button">Bearbeiten</button>

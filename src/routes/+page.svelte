@@ -34,7 +34,6 @@
   <title>D&D Manager</title>
 </svelte:head>
 
-<!-- Seiteninhalt -->
 <div class="container py-5">
   <div class="text-center">
     <h1>Willkommen zu deinem Dungeons & Dragons-Manager</h1>
@@ -44,7 +43,6 @@
     </p>
     <p class="intro">Roll for Initiative!</p>
 
-    <!-- Karussell -->
     <div class="carousel-wrapper">
       <button class="nav-btn left fancy-button" on:click={prevSlide}>&laquo;</button>
 
@@ -167,7 +165,7 @@
     right: -4rem;
   }
 
-  /* ---------- RESPONSIVE ---------- */
+
   @media (max-width: 900px) {
     h1 {
       font-size: 2.2rem;

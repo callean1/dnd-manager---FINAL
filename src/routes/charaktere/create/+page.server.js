@@ -1,14 +1,12 @@
 import db from "$lib/server/db.js";
 import { redirect } from "@sveltejs/kit";
 
-/** Lädt Rassen und Klassen für Dropdowns im Formular */
 export async function load() {
   const rassen = await db.getRassen();
   const klassen = await db.getKlassen();
   return { rassen, klassen };
 }
 
-/** Speichert einen neuen Charakter nach Formabsendung */
 export const actions = {
   create: async ({ request }) => {
     const form = await request.formData();

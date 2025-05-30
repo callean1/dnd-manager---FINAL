@@ -38,7 +38,6 @@
   }
 </script>
 
-<!-- Button über dem Titel -->
 <div class="top-button-wrapper">
   <button class="action-button" on:click={createKlasse}>Neue Klasse hinzufügen</button>
 </div>
@@ -51,7 +50,6 @@
   und beeinflusst massgeblich seine Entwicklung im Abenteuerverlauf. Wähle hier deine Wunschklasse aus, 
 oder erstelle dir eine neue Klasse, die exakt deiner Vorstellung entspricht und all deine Vorlieben vereint.</p>
 
-<!-- Suchleiste -->
 <div class="search-bar">
   <input
     type="text"
@@ -62,7 +60,6 @@ oder erstelle dir eine neue Klasse, die exakt deiner Vorstellung entspricht und 
   <button type="button" on:click={submitSearch} class="action-button">Suchen</button>
 </div>
 
-<!-- Feedback-Meldungen -->
 {#if success}
   <p class="message success">Neue Klasse erfolgreich gespeichert!</p>
 {/if}
@@ -73,14 +70,12 @@ oder erstelle dir eine neue Klasse, die exakt deiner Vorstellung entspricht und 
   <p class="message success">Klasse erfolgreich bearbeitet!</p>
 {/if}
 
-<!-- Kartenraster -->
 <div class="grid">
   {#each klassen as klasse}
     <KlassenCard {klasse} />
   {/each}
 </div>
 
-<!-- Zurück-zum-Anfang-Button -->
 <div class="scroll-top-wrapper">
   <button
     type="button"

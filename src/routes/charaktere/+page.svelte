@@ -38,7 +38,6 @@
   }
 </script>
 
-<!-- Button über dem Titel -->
 <div class="top-button-wrapper">
   <button class="action-button" on:click={createCharakter}>Neuen Charakter erstellen</button>
 </div>
@@ -52,7 +51,6 @@
   dir einen komplett neuen Charakter, denke dir deine eigene Hintergrundgeschichte aus und stürze dich mit 
   deinem personalisierten Helden in das Abenteuer!</p>
 
-<!-- Suchleiste rechts -->
 <div class="search-bar">
   <input
     type="text"
@@ -63,7 +61,6 @@
   <button type="button" on:click={submitSearch} class="action-button">Suchen</button>
 </div>
 
-<!-- Feedback-Meldungen -->
 {#if success}
   <p class="message success">Charakter erfolgreich erstellt!</p>
 {/if}
@@ -74,14 +71,12 @@
   <p class="message success">Charakter aktualisiert!</p>
 {/if}
 
-<!-- Kartenraster -->
 <div class="grid">
   {#each charaktere as charakter}
     <CharaktereCard {charakter} />
   {/each}
 </div>
 
-<!-- Zurück-zum-Anfang-Button -->
 <div class="scroll-top-wrapper">
   <button
     type="button"

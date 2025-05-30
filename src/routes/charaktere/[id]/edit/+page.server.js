@@ -1,7 +1,6 @@
 import db from "$lib/server/db.js";
 import { redirect, error } from "@sveltejs/kit";
 
-// Lade Charakterdaten sowie verfügbare Rassen und Klassen
 export async function load({ params }) {
 	const charakter = await db.getCharakterById(params.id);
 	if (!charakter) throw error(404, "Charakter nicht gefunden");
@@ -12,7 +11,6 @@ export async function load({ params }) {
 	return { charakter, rassen, klassen };
 }
 
-// Verarbeite Formular-Update
 export const actions = {
 	update: async ({ request, params }) => {
 		const form = await request.formData();
