@@ -6,7 +6,7 @@
   let { data } = $props();
   let { klassen } = data;
 
-  let searchQuery = data.search;
+  let searchQuery = $state(data.search);
 
   let success = $state(false);
   let deleted = $state(false);
@@ -39,7 +39,7 @@
 </script>
 
 <div class="top-button-wrapper">
-  <button class="action-button" on:click={createKlasse}>Neue Klasse hinzufügen</button>
+  <button class="action-button" onclick={createKlasse}>Neue Klasse hinzufügen</button>
 </div>
 
 <h1 class="text-2xl font-bold mb-4">Klassen</h1>
@@ -57,7 +57,7 @@ oder erstelle dir eine neue Klasse, die exakt deiner Vorstellung entspricht und 
     bind:value={searchQuery}
     class="input"
   />
-  <button type="button" on:click={submitSearch} class="action-button">Suchen</button>
+  <button type="button" onclick={submitSearch} class="action-button">Suchen</button>
 </div>
 
 {#if success}
@@ -79,7 +79,7 @@ oder erstelle dir eine neue Klasse, die exakt deiner Vorstellung entspricht und 
 <div class="scroll-top-wrapper">
   <button
     type="button"
-    on:click={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+    onclick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
     class="action-button"
   >
     ↑ Zum Seitenanfang zurück

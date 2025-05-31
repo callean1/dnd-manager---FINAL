@@ -44,7 +44,7 @@
     <p class="intro">Roll for Initiative!</p>
 
     <div class="carousel-wrapper">
-      <button class="nav-btn left fancy-button" on:click={prevSlide}>&laquo;</button>
+      <button class="nav-btn left fancy-button" onclick={prevSlide}>&laquo;</button>
 
       <div class="carousel-track">
         {#each [-1, 0, 1] as offset}
@@ -57,7 +57,7 @@
         {/each}
       </div>
 
-      <button class="nav-btn right fancy-button" on:click={nextSlide}>&raquo;</button>
+      <button class="nav-btn right fancy-button" onclick={nextSlide}>&raquo;</button>
     </div>
   </div>
 </div>

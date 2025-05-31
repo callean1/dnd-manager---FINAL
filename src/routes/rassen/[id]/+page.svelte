@@ -69,11 +69,12 @@
 			<button class="action-button dark">Bearbeiten</button>
 		</a>
 
-		<form method="POST" action="?/delete" on:submit|preventDefault={() => {
-			if (confirm('Rasse wirklich löschen?')) {
-				event.target.submit();
-			}
-		}}>
+		<form
+			method="POST"
+			action="?/delete"
+			onsubmit={() => confirm('Rasse wirklich löschen?') || event.preventDefault()}
+			style="margin: 0;"
+		>
 			<button type="submit" class="action-button delete">Löschen</button>
 		</form>
 	</div>

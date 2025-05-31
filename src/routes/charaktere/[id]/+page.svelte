@@ -40,11 +40,13 @@
 			<button class="action-button">Bearbeiten</button>
 		</a>
 
-		<form method="POST" action="?/delete" on:submit|preventDefault={() => {
-			if (confirm("Charakter wirklich löschen?")) {
-				event.target.submit();
-			}
-		}}>
+	
+		<form 
+			method="POST" 
+			action="?/delete" 
+			onsubmit={()=> confirm('Charakter wirklich löschen?') || event.preventDefault()}
+			style="margin: 0;"
+		>
 			<button type="submit" class="delete-button">Löschen</button>
 		</form>
 	</div>

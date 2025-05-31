@@ -58,7 +58,7 @@
 						{merkmal}
 						<button
 							type="button"
-							on:click={() => merkmale = merkmale.filter((_, j) => j !== i)}
+							onclick={() => merkmale = merkmale.filter((_, j) => j !== i)}
 							style="margin-left: 0.5rem; color: red; background: none; border: none; cursor: pointer;"
 						>✕</button>
 					</li>
@@ -74,7 +74,7 @@
 
 			<button
 				type="button"
-				on:click={() => {
+				onclick={() => {
 					if (newMerkmal.trim()) {
 						merkmale = [...merkmale, newMerkmal.trim()];
 						newMerkmal = "";

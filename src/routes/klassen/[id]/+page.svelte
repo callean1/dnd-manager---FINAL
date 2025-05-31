@@ -84,7 +84,7 @@
 		<form
 			method="POST"
 			action="?/delete"
-			on:submit={() => confirm('Klasse wirklich löschen?') || event.preventDefault()}
+			onsubmit={() => confirm('Klasse wirklich löschen?') || event.preventDefault()}
 			style="margin: 0;"
 		>
 			<button type="submit" class="fancy-button delete">Löschen</button>
